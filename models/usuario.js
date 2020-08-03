@@ -150,11 +150,6 @@ usuarioSchema.methods.enviar_email_bienvenida = function(cb) {
         })
 
 
-
-
-
-
-
     });
 
 
