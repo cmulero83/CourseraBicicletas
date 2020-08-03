@@ -1,0 +1,74 @@
+extends layout
+
+block content
+
+  // Start wrapper
+  .wrapper
+    .col-md-12
+      // Logo
+      .brand.wow.fadeIn(data-wow-delay='0.1s')
+        | Sistema de bicicletas
+        .title  - Curso de node js -  
+      // Navigation
+      nav.navbar.navbar-default(role='navigation')
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle(type='button' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          // navbar-brand is hidden on larger screens, but visible when the menu is collapsed
+          .navbar-brand
+            a(href='#') Patsy Doherty
+            .title  - hat designer - 
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            
+            li
+              a(href='/bicicletas') Listado
+            li
+              a(href='/bicicletas/create') Añadir
+
+        // /navbar-collapse
+      // End nav
+      // Start main image and the text below
+      .col-md-12.wow.fadeIn(data-wow-delay='0.1s')
+        
+        
+
+        #map
+        script(src='/javascripts/map.js')
+
+        h1 Sistema de alquiler de bicicletas
+        .hr
+        h2
+          | Sistema de alquiler de bicicletas para un mundo con mejor mobilidad.
+        .text-center
+          a.home-btn.btn(href='collection.html') Otras opciones de mobilidad.
+      // End main image and the text below
+      // Start left column
+      .box-home.col-md-4.col-xs-offset-1
+        h3
+          span.text-left The right hat may also enliven ou imagination of the past...an old-fashioned cloche, a picture hat, or a toque     trimmed with a pouf of polka-dotted veiling is just enough to make us feel as if we were living in another, romantic age. 
+          a(href='')
+            | read more 
+            i.fa.fa-angle-right
+      // End left column
+      // Start right image
+      .col-md-6.wow.fadeIn(data-wow-delay='0.1s')
+        .first
+          .square.wow.fadeInDown(data-wow-delay='.5s')
+        img.photo-home(src='img/bici.png' alt='img')
+      // End right image
+      // Start footer
+      .footer.col-md-6.col-xs-offset-3
+        h5
+          | Copyright 2020
+          a(href='#')
+            i.fa.fa-facebook.fa-1x.icon1
+          a(href='#')
+            i.fa.fa-twitter.fa-1x.icon1
+          a(href='#')
+            i.fa.fa-instagram.fa-1x.icon1

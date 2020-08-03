@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Bienvenido to #{title}
+  p La variable otro texto recibida fue #{otroTexto}
+
+  #map
+
+  // Añadir script
+  script(src='/javascripts/map.js')
+
+
+	
